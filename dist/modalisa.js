@@ -1,9 +1,9 @@
 /**
- * A simple class to create modals and screen locks
+ * A simple js object to generate modals without depending on jquery-ui or injecting too much structure html.
  *
  * @project     modalisa
  * @author      Alberto Boni
- * @version     0.1.0
+ * @version     0.1.1
  * @website     https://github.com/albertoboni/modalisa#readme
  */
 var Modalisa = {

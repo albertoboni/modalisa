@@ -1,0 +1,31 @@
+{
+  "name": "modalisa",
+  "version": "0.1.1",
+  "homepage": "https://github.com/albertoboni/modalisa",
+  "authors": [
+    "Alberto Boni <betobonix@gmail.com>"
+  ],
+  "description": "A simple js object to generate modals without depending on jquery-ui or injecting too much structure html.",
+  "main": "lib/modalisa.js",
+  "keywords": [
+    "ajax",
+    "jquery",
+    "javascript",
+    "modal",
+    "dialog",
+    "js",
+    "lock",
+    "overlay"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "examples",
+    "Gruntfile.js",
+    "README.md"
+  ]
+}
