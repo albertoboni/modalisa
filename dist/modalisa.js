@@ -1,5 +1,5 @@
 /**
- * A simple class to create modals without depending o jquery-ui
+ * A simple class to create modals and screen locks
  *
  * @project     modalisa
  * @author      Alberto Boni
@@ -7,9 +7,9 @@
  * @website     https://github.com/albertoboni/modalisa#readme
  */
 var Modalisa = {
-    modal_selector :          '#modalisa-wapper',
+    modal_selector :          '#modalisa-dialog',
     overlay_selector :        '#modalisa-overlay',
-    modal_content_template :  "<div class=\"modalisa-content-wrapper\">[%content%]</div>",
+    modal_content_template :  "<div class=\"modalisa-dialog-content\">[%content%]</div>",
     screen_lock :             false,
     _modal :                  [],
     _overlay :                [],
@@ -69,12 +69,12 @@ var Modalisa = {
     },
 
     _repositionModal: function() {
-        var top = ($(window).height() - $(this.modal_selector).height()) / 2;
+        var top = ($(window).height() - this._modal.height()) / 2;
         if (top < 50) {
             top = 50;
         }
 
-        $(this.modal_selector).css({
+        this._modal.css({
             'z-index' : 21,
             'top'     : (this.top              ? this.top    : ($(window).scrollTop() + top)) + 'px',
             'height'  : (this.height == 'auto' ? this.height : (this.height + 'px'))
@@ -82,7 +82,7 @@ var Modalisa = {
 
         // Only _repositionModal horizontaly if total screen real-estate is above 720px
         if ($('body').innerWidth() > 720) {
-            $(this.modal_selector).css({
+            this._modal.css({
                 'left'        : '50%',
                 'margin-left' : (this.width / 2 * -1) + 'px'
             });

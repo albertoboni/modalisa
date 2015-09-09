@@ -2,7 +2,7 @@
   "name": "modalisa",
   "version": "0.1.0",
   "author": "Alberto Boni",
-  "description": "A simple class to create modals without depending o jquery-ui",
+  "description": "A simple class to create modals and screen locks",
   "main": "lib/ajax-form.js",
   "directories": {
     "example": "examples"
