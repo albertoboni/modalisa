@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example 2</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../src/modalisa.js"></script>
+</head>
+<body>
+
+    <style>
+        #modalisa-wapper { background: #fff; }
+    </style>
+
+    <div id="target_content">
+        <h2>This is my div content</h2>
+        <img src="img/monalisa.png" alt="Modalisa" width="300" />
+    </div>
+
+    <input type="button" onclick="Modalisa.open({html_selector:'#target_content'})" value="Open modal" />
+    <br/>
+    <input type="button" onclick="Modalisa.open({html_selector:'#target_content', width:500, height:600})" value="Open modal with set width + height" />
+
+</body>
+</html>

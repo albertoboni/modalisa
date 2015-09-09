@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example 1</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../src/modalisa.js"></script>
+</head>
+<body>
+
+    <style>
+        #modalisa-wapper { background: #fff; }
+    </style>
+
+    <input type="button" onclick="Modalisa.open({html:'Here is my content.<br/>Click on the overlay to close or call <a href=&quot;javascript:Modalisa.close()&quot;>Modalisa.close()</a>.'})" value="Open modal" />
+
+    <input type="button" onclick="Modalisa.open({html:'Now the screen is locked.<br/>Send the param <strong>screen_lock: true</strong> to Modalisa.open() call', screen_lock: true})" value="Lock the screen" />
+
+</body>
+</html>
