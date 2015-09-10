@@ -1,5 +1,7 @@
 # modalisa
 
+![Modalisa](https://github.com/albertoboni/modalisa/blob/master/examples/img/monalisa-350x350.png "Modalisa")
+
 A simple js object to generate modals without depending on jquery-ui or injecting too much structure html. I got tired of trying to hack jquery-ui#dialog's CSS and decided to have something simple that I could just inject some external html.
 
 
