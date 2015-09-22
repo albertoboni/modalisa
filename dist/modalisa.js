@@ -3,7 +3,7 @@
  *
  * @project     modalisa
  * @author      Alberto Boni
- * @version     0.1.1
+ * @version     0.2.0
  * @website     https://github.com/albertoboni/modalisa#readme
  */
 var Modalisa = {
@@ -23,6 +23,10 @@ var Modalisa = {
         this.width       = params.width       ? params.width  : 300;
         this.height      = params.height      ? params.height : 'auto';
         this.top         = params.top         ? params.top    : null;
+
+        if (params.img_src) {
+            this.html = $('<img>').attr('src', params.img_src).prop('outerHTML');
+        }
 
         this._renderContent(params);
         this._renderOverlay(params);

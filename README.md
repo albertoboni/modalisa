@@ -51,6 +51,11 @@ Modalisa.open({
     screen_lock: true
 });
 
+// Simple image dialog
+Modalisa.open({
+    img_src: 'my_image.jpg'
+});
+
 // Simple ajax call passing values by POST
 Modalisa.openAjax({
     url: 'http://www.example.com/my_page',
@@ -105,9 +110,10 @@ Whenever the dialog is opened, it generates a `<div>` for the overlay and anothe
 | url             | String   | `null`       | The url for the `openAjax()` request |
 | method          | String   | `"get"`      | The http method for the `openAjax()` request. Accepted values: `get`, `post`  |
 | data            | Object   | `{}`         | The data to be sent on the `openAjax()` request |
+| screen_lock     | Boolean  | `false`      | If set to `true` it will deactivate the `close()` method, making the dialog unclosable |
 | html            | String   | `null`       | HTML to be injected on the dialog |
 | html_selector   | String   | `null`       | The jQuery selector to of element to be copied and injected. It overrides the `html` option |
-| screen_lock     | Boolean  | `false`      | If set to `true` it will deactivate the `close()` method, making the dialog unclosable |
+| img_src         | String   | `null`       | The image source of an image tag to be injected on the dialog. It overrides the `html` option |
 
 
 

@@ -16,6 +16,13 @@ var Modalisa = {
         this.height      = params.height      ? params.height : 'auto';
         this.top         = params.top         ? params.top    : null;
 
+        if (params.img_src) {
+            console.log(params.img_src);
+            console.log($('<img>').attr('src', params.img_src));
+            console.log($('<img>').attr('src', params.img_src).prop('outerHTML'));
+            params.html = $('<img>').attr('src', params.img_src).prop('outerHTML');
+        }
+
         this._renderContent(params);
         this._renderOverlay(params);
         this._repositionModal();
