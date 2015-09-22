@@ -3,7 +3,7 @@
  *
  * @project     modalisa
  * @author      Alberto Boni
- * @version     0.2.0
+ * @version     0.2.1
  * @website     https://github.com/albertoboni/modalisa#readme
  */
 var Modalisa = {
