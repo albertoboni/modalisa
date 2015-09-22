@@ -25,7 +25,7 @@ Just add the dependency for this repo to your `package.json` or `bower.json`:
 {
   ...,
   "dependencies": {
-      "ajax-form": "git@github.com:albertoboni/ajax-form.git"
+      "modalisa": "git@github.com:albertoboni/modalisa.git"
    },
    ...
 }
@@ -118,7 +118,7 @@ Whenever the dialog is opened, it generates a `<div>` for the overlay and anothe
 
 
 ## Examples
-You can find simple usages in the [examples folder](https://github.com/albertoboni/ajax-form/tree/master/examples).
+You can find simple usages in the [examples folder](https://github.com/albertoboni/modalisa/tree/master/examples).
 
 
 ## TODO
@@ -130,7 +130,7 @@ For the next version:
 
 
 ## Contributing
-Bug reports and pull requests are welcome on GitHub at https://github.com/albertoboni/ajax-form.
+Bug reports and pull requests are welcome on GitHub at https://github.com/albertoboni/modalisa.
 This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to
 the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
