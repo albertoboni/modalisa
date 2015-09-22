@@ -17,9 +17,6 @@ var Modalisa = {
         this.top         = params.top         ? params.top    : null;
 
         if (params.img_src) {
-            console.log(params.img_src);
-            console.log($('<img>').attr('src', params.img_src));
-            console.log($('<img>').attr('src', params.img_src).prop('outerHTML'));
             params.html = $('<img>').attr('src', params.img_src).prop('outerHTML');
         }
 

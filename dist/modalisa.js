@@ -25,7 +25,7 @@ var Modalisa = {
         this.top         = params.top         ? params.top    : null;
 
         if (params.img_src) {
-            this.html = $('<img>').attr('src', params.img_src).prop('outerHTML');
+            params.html = $('<img>').attr('src', params.img_src).prop('outerHTML');
         }
 
         this._renderContent(params);
