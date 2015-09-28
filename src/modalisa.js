@@ -17,6 +17,7 @@ var Modalisa = {
         this.top         = params.top         ? params.top    : null;
 
         if (params.img_src) {
+            this._preloadImage(params.img_src);
             params.html = $('<img>').attr('src', params.img_src).prop('outerHTML');
         }
 
@@ -130,6 +131,15 @@ var Modalisa = {
     _closeShortcut : function(e) {
         if (e.keyCode == 27) {
             Modalisa.close();
+        }
+    },
+
+    _preloadImage : function() {
+        images = new Array();
+
+        for (i = 0; i < this._preloadImage.arguments.length; i++) {
+            images[i] = new Image()
+            images[i].src = this._preloadImage.arguments[i]
         }
     }
 };
