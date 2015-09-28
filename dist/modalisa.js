@@ -3,7 +3,7 @@
  *
  * @project     modalisa
  * @author      Alberto Boni
- * @version     0.2.2
+ * @version     0.2.3
  * @website     https://github.com/albertoboni/modalisa#readme
  */
 var Modalisa = {
@@ -46,8 +46,6 @@ var Modalisa = {
         var data    = params.data   ? params.data   : {};
         var parent  = this;
 
-        console.log(params);
-
         $.ajax({
             url:      params.url,
             type:     method,
@@ -89,7 +87,7 @@ var Modalisa = {
         if ($('body').innerWidth() > 720) {
             this._modal.css({
                 'left'        : '50%',
-                'margin-left' : (this.width / 2 * -1) + 'px'
+                'margin-left' : (this._modal.width() / 2 * -1) + 'px'
             });
         }
     },

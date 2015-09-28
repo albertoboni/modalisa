@@ -1,6 +1,6 @@
 {
   "name": "modalisa",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "Alberto Boni",
   "description": "A simple js object to generate modals without depending on jquery-ui or injecting too much structure html.",
   "main": "lib/ajax-form.js",

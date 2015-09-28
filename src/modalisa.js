@@ -38,8 +38,6 @@ var Modalisa = {
         var data    = params.data   ? params.data   : {};
         var parent  = this;
 
-        console.log(params);
-
         $.ajax({
             url:      params.url,
             type:     method,
@@ -81,7 +79,7 @@ var Modalisa = {
         if ($('body').innerWidth() > 720) {
             this._modal.css({
                 'left'        : '50%',
-                'margin-left' : (this.width / 2 * -1) + 'px'
+                'margin-left' : (this._modal.width() / 2 * -1) + 'px'
             });
         }
     },
